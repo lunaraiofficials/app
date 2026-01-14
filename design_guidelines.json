@@ -1,0 +1,154 @@
+{
+  "identity": {
+    "name": "Skill Builder",
+    "persona": "E1 - The Anti-AI Designer",
+    "vibe": "Organic Professionalism",
+    "archetype": "Archetype 1: Organic & Earthy (Modernized)",
+    "emotional_tone": "Empowering, Clear, Efficient, Trustworthy"
+  },
+  "typography": {
+    "headings": {
+      "family": "Outfit",
+      "weights": ["500", "600", "700"],
+      "usage": "Headings, Hero Text, Big Numbers",
+      "letter_spacing": "tracking-tight"
+    },
+    "body": {
+      "family": "DM Sans",
+      "weights": ["400", "500"],
+      "usage": "Paragraphs, UI Elements, Buttons",
+      "letter_spacing": "tracking-normal"
+    },
+    "mono": {
+      "family": "JetBrains Mono",
+      "usage": "Code snippets, ATS Scores, Technical Data"
+    },
+    "cdn_links": [
+      "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=DM+Sans:opsz,wght@9..40,400;500;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    ]
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "name": "Deep Forest",
+        "hex": "#064E3B",
+        "tailwind": "bg-emerald-900",
+        "text": "text-emerald-900"
+      },
+      "secondary": {
+        "name": "Stone Paper",
+        "hex": "#FAFAF9",
+        "tailwind": "bg-stone-50",
+        "text": "text-stone-50"
+      },
+      "accent": {
+        "name": "Electric Lime",
+        "hex": "#D9F99D",
+        "tailwind": "bg-lime-300",
+        "text": "text-lime-900"
+      },
+      "neutral": {
+        "surface": "#FFFFFF",
+        "border": "#E7E5E4",
+        "text_main": "#1C1917",
+        "text_muted": "#57534E"
+      }
+    },
+    "usage_rules": {
+      "backgrounds": "Use Stone-50 for main backgrounds, White for cards.",
+      "ctas": "Primary buttons are Emerald-900 with White text. Secondary buttons are White with Stone-200 border.",
+      "gradients": "NO GRADIENTS. Use solid colors or subtle noise textures.",
+      "text": "Never use pure black. Use Stone-900 for headings, Stone-600 for body."
+    }
+  },
+  "layout": {
+    "spacing_system": {
+      "base": "Generous. Use p-8 or p-12 where p-4 is standard.",
+      "containers": "Max width 1400px for dashboard, 1200px for reading content.",
+      "grid_strategy": "Use 'Bento' grids. Avoid equal-width columns. Mix 2/3 + 1/3 splits."
+    },
+    "grids": {
+      "landing": "Mode A: Tetris Grid (Asymmetrical, Artistic)",
+      "dashboard": "Mode B: Control Room Grid (Dense, Data-focused)"
+    },
+    "border_radius": {
+      "cards": "rounded-sm (2px)",
+      "buttons": "rounded-full (Pill shape) OR rounded-sm (Sharp)",
+      "inputs": "rounded-md"
+    }
+  },
+  "components": {
+    "shadcn_customization": {
+      "buttons": "h-10 px-6 font-medium tracking-wide transition-all hover:-translate-y-0.5 active:translate-y-0",
+      "cards": "bg-white border border-stone-200 shadow-sm hover:shadow-md transition-shadow duration-300",
+      "inputs": "bg-stone-50 border-stone-200 focus:ring-2 focus:ring-emerald-900/20 focus:border-emerald-900",
+      "dialogs": "rounded-lg border-stone-200 shadow-2xl backdrop-blur-xl bg-white/95"
+    },
+    "custom_components": {
+      "ATS_Score_Ring": "Use a semi-circle gauge with Emerald (Good), Yellow (Avg), Red (Bad).",
+      "Job_Card": "Minimalist. Logo left, Title bold, Tags as pill badges (outline only).",
+      "Resume_Preview": "A4 aspect ratio container with shadow-lg and scale-on-hover."
+    }
+  },
+  "visual_enhancers": {
+    "texture": "Add a fixed position div with 'bg-noise' opacity-5 pointer-events-none z-50 over the whole app.",
+    "glassmorphism": "Use backdrop-blur-md bg-white/80 for sticky headers and floating panels.",
+    "shadows": "shadow-[0_2px_8px_rgba(0,0,0,0.04)] for cards. shadow-[0_12px_24px_rgba(0,0,0,0.08)] for dropdowns."
+  },
+  "motion": {
+    "library": "framer-motion",
+    "transitions": {
+      "page_load": "initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, ease: 'easeOut' }}",
+      "hover": "whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.99 }}",
+      "list_stagger": "staggerChildren: 0.05"
+    }
+  },
+  "images": {
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1653669487404-09c3617c2b6c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkaXZlcnNlJTIwc3R1ZGVudHMlMjB3b3JraW5nJTIwbGFwdG9wfGVufDB8fHx8MTc2ODQxODM1OXww&ixlib=rb-4.1.0&q=85",
+      "alt": "Diverse students working together",
+      "usage": "Hero section background or split layout image"
+    },
+    "features": [
+      {
+        "url": "https://images.unsplash.com/photo-1764755932155-dabbee87df7e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBtaW5pbWFsJTIwb2ZmaWNlJTIwd29ya3NwYWNlJTIwZGVza3xlbnwwfHx8fDE3Njg0MTgzNjF8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Minimal workspace",
+        "usage": "Feature section: 'Focus on what matters'"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1633114072859-7e8171f1bc95?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBkaXZlcnNlJTIwc3R1ZGVudHMlMjB3b3JraW5nJTIwbGFwdG9wfGVufDB8fHx8MTc2ODQxODM1OXww&ixlib=rb-4.1.0&q=85",
+        "alt": "Professional woman with laptop",
+        "usage": "Testimonial or 'Get Hired' section"
+      }
+    ],
+    "placeholders": {
+      "logo": "https://via.placeholder.com/40x40?text=Logo",
+      "user": "https://via.placeholder.com/150?text=User"
+    }
+  },
+  "universal_guidelines": {
+    "anti_patterns": [
+      "NO generic 'SaaS Blue' gradients.",
+      "NO 'Inter' font for headings.",
+      "NO centered text blocks wider than 600px.",
+      "NO default Shadcn radius (customize it)."
+    ],
+    "accessibility": {
+      "contrast": "Ensure text is Stone-600 or darker on Stone-50 backgrounds.",
+      "focus_states": "Visible ring-2 ring-emerald-500 ring-offset-2 on all interactive elements."
+    },
+    "testing": {
+      "attribute": "data-testid",
+      "format": "kebab-case (e.g., 'submit-resume-btn')"
+    }
+  },
+  "instructions_to_main_agent": [
+    "1. Install fonts: Outfit and DM Sans via Google Fonts in index.html or CSS.",
+    "2. Configure Tailwind: Add the colors (Emerald-900, Lime-300, Stone-50) to tailwind.config.js.",
+    "3. Create a 'Layout' component that applies the global texture and font settings.",
+    "4. Build the 'Dashboard' using the 'Control Room' grid strategy.",
+    "5. Build the 'Landing Page' using the 'Tetris' grid strategy.",
+    "6. Use 'framer-motion' for all page transitions and hover effects.",
+    "7. Ensure all buttons have the 'pill' or 'sharp' style defined in components section."
+  ]
+}
